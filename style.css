@@ -4,6 +4,8 @@
     --color-black: #000000;
     --color-orange: #F25822;
     --color-grey: #888888;
+    --color-form-fields: #666666;
+    --color-form-background: #EEEEEE;
 }
 
 a {
@@ -19,6 +21,14 @@ section {
     max-width: 1174px;
     display: flex;
     flex-direction: column;
+}
+
+.section {
+    transform: translateX(-173px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .b_block {
@@ -264,4 +274,56 @@ section {
 .aligner_button {
     text-align: center ;
     padding: 24px 0 34px 0;
+}
+
+.img_wwd {
+    width: 884px;
+    height: 800px;
+}
+
+.wwd_page {
+    max-width: 643px;
+}
+
+.img_wi {
+    width: 100px;
+    height: 100px;
+}
+
+.wwd_blocks {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 16px;
+    padding: 0 24px;
+}
+
+.mail_box {
+    margin: 100px auto;
+}
+
+.form_field {
+    width: 140px;
+    height: 50px;
+    border: none;
+    color: var(--color-form-fields);
+    background-color: var(--color-form-background);
+    font-size: 14px;
+    padding-left: 16px;
+}
+
+.url_field {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-right: -4px;
+    border-right: solid 1px var(--color-form-fields);
+}
+
+.email_field {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.gap8 {
+    gap: 8px;
 }
